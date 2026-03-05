@@ -13,13 +13,13 @@ html {
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #0c2d5e;
+    background: #0D6B58;
     border-radius: 4px;
 }
 
 /* Active nav link */
 .nav-active {
-    color: #0c2d5e;
+    color: #0D6B58;
     border-bottom: 2px solid #c9a84c;
 }
 
@@ -55,7 +55,7 @@ html {
 
 /* Form focus styles */
 input:focus, select:focus, textarea:focus {
-    box-shadow: 0 0 0 3px rgba(12, 45, 94, 0.1);
+    box-shadow: 0 0 0 3px rgba(13, 107, 88, 0.1);
 }
 
 /* Responsive adjustments */
