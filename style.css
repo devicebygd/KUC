@@ -1,0 +1,83 @@
+/* KUC - Qarabağ Universiteti Tibb Fakültəsi - Custom Styles */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #0c2d5e;
+    border-radius: 4px;
+}
+
+/* Active nav link */
+.nav-active {
+    color: #0c2d5e;
+    border-bottom: 2px solid #c9a84c;
+}
+
+/* Hero section background pattern */
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(255,255,255,0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Card hover effects */
+.group:hover {
+    transform: translateY(-2px);
+}
+
+/* Section fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form focus styles */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(12, 45, 94, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Logo placeholder fallback */
+img[src="assets/logo.png"] {
+    min-height: 56px;
+    min-width: 56px;
+    object-fit: contain;
+}
+
+/* Print styles */
+@media print {
+    header, footer, #menuBtn, .no-print {
+        display: none !important;
+    }
+    section {
+        break-inside: avoid;
+    }
+}

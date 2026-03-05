@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qarabağ Universiteti - Tibb və Sağlamlıq Elmləri Fakültəsi</title>
+    <meta name="description" content="Qarabağ Universitetinin Klinikası və Tibb və Sağlamlıq Elmləri Fakültəsi - Təhsil, Elmi Tədqiqat və Qabaqcıl Səhiyyə">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0c2d5e',
+                        'primary-light': '#1a4a8a',
+                        'primary-dark': '#081d3e',
+                        accent: '#2980b9',
+                        gold: '#c9a84c'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Inter',sans-serif] text-gray-800 bg-white">
+
+    <!-- Top Bar -->
+    <div class="bg-primary-dark text-white text-sm py-2 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span>&#9993; info@kuc.edu.az</span>
+                <span>&#9742; +994 XX XXX XX XX</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-gold transition">Tələbə Portalı</a>
+                <span>|</span>
+                <a href="#" class="hover:text-gold transition">Elektron Kitabxana</a>
+                <span>|</span>
+                <a href="#" class="hover:text-gold transition">AZ</a>
+                <a href="#" class="hover:text-gold transition">EN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="KUC Logo" class="h-14 w-auto">
+                <div class="hidden sm:block leading-tight">
+                    <p class="text-primary font-bold text-lg">Qarabağ Universiteti</p>
+                    <p class="text-xs text-gray-500">Tibb və Sağlamlıq Elmləri Fakültəsi</p>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
+                <a href="#home" class="hover:text-primary transition">Ana Səhifə</a>
+                <a href="#about" class="hover:text-primary transition">Haqqımızda</a>
+                <a href="#programs" class="hover:text-primary transition">Proqramlar</a>
+                <a href="#research" class="hover:text-primary transition">Elmi-Tədqiqat</a>
+                <a href="#clinic" class="hover:text-primary transition">Klinika</a>
+                <a href="#news" class="hover:text-primary transition">Xəbərlər</a>
+                <a href="#contact" class="hover:text-primary transition">Əlaqə</a>
+                <a href="#" class="bg-primary text-white px-5 py-2 rounded hover:bg-primary-light transition">Qəbul 2026</a>
+            </nav>
+            <button id="menuBtn" class="lg:hidden text-primary text-3xl">&#9776;</button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+            <div class="flex flex-col px-4 py-4 gap-3 text-sm font-medium text-gray-700">
+                <a href="#home" class="py-2 border-b hover:text-primary">Ana Səhifə</a>
+                <a href="#about" class="py-2 border-b hover:text-primary">Haqqımızda</a>
+                <a href="#programs" class="py-2 border-b hover:text-primary">Proqramlar</a>
+                <a href="#research" class="py-2 border-b hover:text-primary">Elmi-Tədqiqat</a>
+                <a href="#clinic" class="py-2 border-b hover:text-primary">Klinika</a>
+                <a href="#news" class="py-2 border-b hover:text-primary">Xəbərlər</a>
+                <a href="#contact" class="py-2 border-b hover:text-primary">Əlaqə</a>
+                <a href="#" class="bg-primary text-white text-center px-5 py-2 rounded">Qəbul 2026</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-primary via-primary-light to-accent text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-gold rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 py-24 md:py-32 relative z-10">
+            <div class="max-w-3xl">
+                <p class="text-gold font-semibold mb-4 tracking-wider uppercase text-sm">Qarabağ Universiteti</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">Təhsil, Elmi Tədqiqat və Qabaqcıl Səhiyyə</h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">Tibb və Sağlamlıq Elmləri Fakültəsi olaraq, gələcəyin həkimlərini yetişdirir, elmi araşdırmalarla səhiyyəyə töhfə veririk.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#programs" class="bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">Proqramlarımız</a>
+                    <a href="#research" class="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition">Elmi Tədqiqat</a>
+                </div>
+            </div>
+        </div>
+        <!-- Stats Bar -->
+        <div class="bg-primary-dark/60 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div><p class="text-3xl font-bold text-gold">1200+</p><p class="text-sm text-blue-200">Tələbə</p></div>
+                <div><p class="text-3xl font-bold text-gold">85+</p><p class="text-sm text-blue-200">Akademik Heyət</p></div>
+                <div><p class="text-3xl font-bold text-gold">12</p><p class="text-sm text-blue-200">Tədqiqat Laboratoriyası</p></div>
+                <div><p class="text-3xl font-bold text-gold">30+</p><p class="text-sm text-blue-200">Elmi Nəşr (2025)</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold uppercase tracking-wider text-sm mb-2">Haqqımızda</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Fakültə və Klinika</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Tariximiz və Missiyamız</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Qarabağ Universiteti Azərbaycan Respublikasının Qarabağ bölgəsində təhsilin və elmin inkişafına töhfə vermək məqsədilə yaradılmışdır. Tibb və Sağlamlıq Elmləri Fakültəsi universitetin ən strateji strukturlarından biri olaraq, beynəlxalq standartlara uyğun tibbi təhsil proqramları həyata keçirir.</p>
+                    <p class="text-gray-600 leading-relaxed mb-4">Fakültəmiz Qarabağ Universitetinin Klinikası ilə sıx əməkdaşlıq edərək tələbələrə nəzəri bilikləri praktikada tətbiq etmək imkanı yaradır. Müasir simulyasiya mərkəzimiz və tədqiqat laboratoriyalarımız tələbələrimizin peşəkar inkişafını təmin edir.</p>
+                    <p class="text-gray-600 leading-relaxed">Məqsədimiz Azərbaycan səhiyyə sisteminə yüksək ixtisaslı, araşdırma yönümlü və etik dəyərlərə sadiq tibb mütəxəssisləri yetişdirməkdir.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h4 class="text-xl font-bold text-primary mb-6">Əsas Dəyərlərimiz</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary font-bold">1</span></div>
+                            <div><p class="font-semibold text-gray-800">Akademik Mükəmməllik</p><p class="text-sm text-gray-500">Beynəlxalq standartlara uyğun kurikulum və təhsil keyfiyyəti</p></div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary font-bold">2</span></div>
+                            <div><p class="font-semibold text-gray-800">Elmi Tədqiqat</p><p class="text-sm text-gray-500">İnnovativ tibbi araşdırmalar və beynəlxalq əməkdaşlıq</p></div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary font-bold">3</span></div>
+                            <div><p class="font-semibold text-gray-800">Praktiki Təhsil</p><p class="text-sm text-gray-500">Kliniki təcrübə və simulyasiya əsaslı öyrənmə</p></div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary font-bold">4</span></div>
+                            <div><p class="font-semibold text-gray-800">İctimai Səhiyyə</p><p class="text-sm text-gray-500">Cəmiyyətin sağlamlığına töhfə verən layihələr</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Programs -->
+    <section id="programs" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold uppercase tracking-wider text-sm mb-2">Akademik Proqramlar</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Təhsil Proqramlarımız</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition">
+                        <svg class="w-7 h-7 text-primary group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Ümumi Tibb (MD)</h3>
+                    <p class="text-gray-500 text-sm mb-3">6 illik proqram</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Beynəlxalq standartlara uyğun hazırlanmış ümumi tibb proqramı. Tələbələr fundamental tibb elmləri, kliniki bacarıqlar və tibbi etika sahəsində dərin bilik əldə edirlər.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition">
+                        <svg class="w-7 h-7 text-primary group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Stomatologiya</h3>
+                    <p class="text-gray-500 text-sm mb-3">5 illik proqram</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Müasir stomatologiya texnologiyaları və kliniki praktika əsasında qurulmuş təhsil proqramı. Tələbələr oral sağlamlıq sahəsində geniş biliklər əldə edirlər.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition">
+                        <svg class="w-7 h-7 text-primary group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Əczaçılıq</h3>
+                    <p class="text-gray-500 text-sm mb-3">5 illik proqram</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Farmakoloji tədqiqatlar və kliniki əczaçılıq sahəsində peşəkar kadrlar hazırlayan proqram. Laboratoriya təcrübəsi və sənaye praktikası daxildir.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition">
+                        <svg class="w-7 h-7 text-primary group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Tibb Bacısı (Nursing)</h3>
+                    <p class="text-gray-500 text-sm mb-3">4 illik proqram</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Müasir tibb bacısı hazırlığı proqramı. Kliniki bacarıqlar, xəstə qayğısı və ictimai sağlamlıq sahəsində peşəkar biliklər öyrədilir.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition">
+                        <svg class="w-7 h-7 text-primary group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">İctimai Sağlamlıq (MPH)</h3>
+                    <p class="text-gray-500 text-sm mb-3">Magistratura - 2 il</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Epidemiologiya, sağlamlıq siyasəti və proqram idarəetməsi sahələrini əhatə edən magistratura proqramı. Tədqiqat yönümlü təhsil.</p>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition">
+                        <svg class="w-7 h-7 text-primary group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Biotibb Elmləri (PhD)</h3>
+                    <p class="text-gray-500 text-sm mb-3">Doktorantura - 3-4 il</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Molekulyar biologiya, genetika və biotibb mühəndisliyi sahəsində dərinləşdirilmiş elmi tədqiqat proqramı.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold uppercase tracking-wider text-sm mb-2">Elmi Fəaliyyət</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Elmi-Tədqiqat</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Fakültəmiz tibbi tədqiqatlar sahəsində regional və beynəlxalq səviyyədə tanınan elmi işlər aparır.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-md p-8 border-l-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-3">Tədqiqat Mərkəzləri</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Molekulyar Tibb və Genomika Tədqiqat Mərkəzi</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Kliniki Araşdırmalar və Farmakovigilans Mərkəzi</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>İctimai Sağlamlıq və Epidemiologiya Laboratoriyası</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Tibbi Görüntüləmə və Süni İntellekt Laboratoriyası</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Regenerativ Tibb və Toxuma Mühəndisliyi Mərkəzi</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">Tədqiqat Laboratoriyaları</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Biokimya və Hüceyrə Biologiyası Laboratoriyası</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Mikrobiologiya və İmmunologiya Laboratoriyası</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Farmakologiya və Toksiokologiya Laboratoriyası</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Anatomiya və Histologiya Laboratoriyası</li>
+                        <li class="flex items-start gap-2"><span class="text-gold mt-1">&#9679;</span>Tibbi Genetika Laboratoriyası</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Recent Publications -->
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <h3 class="text-xl font-bold text-primary mb-6">Son Elmi Nəşrlər</h3>
+                <div class="space-y-4">
+                    <div class="border-b pb-4">
+                        <p class="font-semibold text-gray-800 text-sm">"Qarabağ bölgəsində ictimai sağlamlıq göstəricilərinin qiymətləndirilməsi: retrospektiv araşdırma"</p>
+                        <p class="text-xs text-gray-500 mt-1">Hüseynov A., Məmmədova S., Əliyev R. - Azerbaijan Medical Journal, 2025</p>
+                    </div>
+                    <div class="border-b pb-4">
+                        <p class="font-semibold text-gray-800 text-sm">"Süni intellektin tibbi diaqnostikada tətbiqi: sistematik icmal"</p>
+                        <p class="text-xs text-gray-500 mt-1">Qasımov T., Babayeva N. - Journal of Biomedical Informatics, 2025</p>
+                    </div>
+                    <div class="pb-2">
+                        <p class="font-semibold text-gray-800 text-sm">"Regenerativ tibbin müasir yanaşmaları: toxuma mühəndisliyi perspektivləri"</p>
+                        <p class="text-xs text-gray-500 mt-1">İsmayılova G., Həsənov M. - European Journal of Medical Research, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic & Simulation Section -->
+    <section id="clinic" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold uppercase tracking-wider text-sm mb-2">Praktiki Təhsil</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Klinika və Simulyasiya Mərkəzi</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Qarabağ Universitetinin Klinikası</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">Qarabağ Universitetinin Klinikası, tələbələrimizin nəzəri biliklərini praktikada tətbiq etmələri üçün əsas bazadır. Klinikamız müasir tibbi avadanlıqlarla təchiz olunmuş və beynəlxalq standartlara uyğun fəaliyyət göstərir.</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">Klinikada çalışan təcrübəli tibb işçiləri və professor-müəllim heyəti tələbələrin kliniki bacarıqlarının inkişafına dəstək verir.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 rounded-lg p-4 text-center">
+                            <p class="text-2xl font-bold text-primary">8</p>
+                            <p class="text-xs text-gray-500">Kliniki Şöbə</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4 text-center">
+                            <p class="text-2xl font-bold text-primary">120</p>
+                            <p class="text-xs text-gray-500">Çarpayı Yeri</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4 text-center">
+                            <p class="text-2xl font-bold text-primary">24/7</p>
+                            <p class="text-xs text-gray-500">Təcili Yardım</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4 text-center">
+                            <p class="text-2xl font-bold text-primary">50+</p>
+                            <p class="text-xs text-gray-500">Mütəxəssis Həkim</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Simulyasiya Mərkəzi</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Müasir tibbi simulyasiya mərkəzimiz tələbələrə real kliniki mühitə yaxın şəraitdə təcrübə qazanmağa imkan verir. Yüksək texnologiyalı manekenlər və virtual simulyatorlar vasitəsilə tələbələr müxtəlif tibbi prosedurları təhlükəsiz mühitdə öyrənə bilirlər.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                            <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary text-sm font-bold">&#10003;</span></div>
+                            <div><p class="font-semibold text-sm text-gray-800">Yüksək Texnologiyalı Manekenlər</p><p class="text-xs text-gray-500">Həyati funksiyaları simulyasiya edən müasir manekenlər</p></div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                            <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary text-sm font-bold">&#10003;</span></div>
+                            <div><p class="font-semibold text-sm text-gray-800">Virtual Cərrahiyyə Simulyatoru</p><p class="text-xs text-gray-500">Laparoskopik və endoskopik prosedurların simulyasiyası</p></div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                            <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary text-sm font-bold">&#10003;</span></div>
+                            <div><p class="font-semibold text-sm text-gray-800">OSCE İmtahan Otaqları</p><p class="text-xs text-gray-500">Strukturlaşdırılmış kliniki imtahanlar üçün xüsusi otaqlar</p></div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                            <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0"><span class="text-primary text-sm font-bold">&#10003;</span></div>
+                            <div><p class="font-semibold text-sm text-gray-800">Debriefing Otaqları</p><p class="text-xs text-gray-500">Video qeydiyyat və analiz sistemi ilə təchiz olunmuş</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold uppercase tracking-wider text-sm mb-2">Son Yeniliklər</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Xəbərlər və Hadisələr</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gradient-to-br from-primary to-accent flex items-center justify-center"><span class="text-white text-5xl">&#127891;</span></div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold">28 Fevral 2026</span>
+                        <h3 class="font-bold text-primary mt-2 mb-2">2026-2027 Tədris İli Üçün Qəbul Elan Edildi</h3>
+                        <p class="text-sm text-gray-500">Tibb və Sağlamlıq Elmləri Fakültəsinə qəbul üçün müraciət prosesi başladı. Ətraflı məlumat üçün Qəbul Komissiyası ilə əlaqə saxlayın.</p>
+                    </div>
+                </article>
+                <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gradient-to-br from-accent to-primary-light flex items-center justify-center"><span class="text-white text-5xl">&#128300;</span></div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold">15 Fevral 2026</span>
+                        <h3 class="font-bold text-primary mt-2 mb-2">Beynəlxalq Tibbi Tədqiqat Konfransı Keçiriləcək</h3>
+                        <p class="text-sm text-gray-500">Aprel ayında keçiriləcək III Beynəlxalq Tibbi Tədqiqat Konfransına tezis qəbulu davam edir.</p>
+                    </div>
+                </article>
+                <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="h-48 bg-gradient-to-br from-primary-light to-primary flex items-center justify-center"><span class="text-white text-5xl">&#129657;</span></div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold">5 Fevral 2026</span>
+                        <h3 class="font-bold text-primary mt-2 mb-2">Yeni Simulyasiya Laboratoriyası İstifadəyə Verildi</h3>
+                        <p class="text-sm text-gray-500">Müasir avadanlıqlarla təchiz olunmuş yeni simulyasiya laboratoriyamız tələbələrin istifadəsinə verildi.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold uppercase tracking-wider text-sm mb-2">Bizimlə Əlaqə</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Əlaqə Məlumatları</h2>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <h4 class="font-bold text-primary mb-4">Ünvan</h4>
+                        <p class="text-gray-600 text-sm">Xankəndi şəhəri, Qarabağ, Azərbaycan</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <h4 class="font-bold text-primary mb-4">Elektron Poçt</h4>
+                        <p class="text-gray-600 text-sm mb-1">Ümumi: <a href="mailto:info@kuc.edu.az" class="text-accent hover:underline">info@kuc.edu.az</a></p>
+                        <p class="text-gray-600 text-sm mb-1">Qəbul: <a href="mailto:admissions@kuc.edu.az" class="text-accent hover:underline">admissions@kuc.edu.az</a></p>
+                        <p class="text-gray-600 text-sm">Tədqiqat: <a href="mailto:research@kuc.edu.az" class="text-accent hover:underline">research@kuc.edu.az</a></p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <h4 class="font-bold text-primary mb-4">İş Saatları</h4>
+                        <p class="text-gray-600 text-sm mb-1">Bazar ertəsi - Cümə: 09:00 - 18:00</p>
+                        <p class="text-gray-600 text-sm mb-1">Şənbə: 09:00 - 14:00</p>
+                        <p class="text-gray-600 text-sm">Bazar: Bağlı</p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="lg:col-span-2 bg-white border border-gray-200 rounded-xl p-8">
+                    <h4 class="text-xl font-bold text-primary mb-6">Bizə Yazın</h4>
+                    <form id="contactForm" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Ad, Soyad *</label>
+                                <input type="text" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Adınızı daxil edin">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">E-poçt *</label>
+                                <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mövzu *</label>
+                            <select name="subject" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+                                <option value="">Mövzu seçin</option>
+                                <option>Qəbul və Müraciət</option>
+                                <option>Akademik Proqramlar</option>
+                                <option>Elmi Tədqiqat Əməkdaşlığı</option>
+                                <option>Klinika Xidmətləri</option>
+                                <option>Digər</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mesajınız *</label>
+                            <textarea name="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none transition resize-none" placeholder="Mesajınızı yazın..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white font-semibold px-8 py-3 rounded-lg hover:bg-primary-light transition">Göndər</button>
+                    </form>
+                    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg text-sm">Mesajınız uğurla göndərildi. Ən qısa zamanda sizinlə əlaqə saxlanılacaq.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/logo.png" alt="KUC Logo" class="h-12 mb-4 brightness-0 invert">
+                    <p class="text-blue-200 text-sm leading-relaxed">Qarabağ Universiteti<br>Tibb və Sağlamlıq Elmləri Fakültəsi</p>
+                    <p class="text-blue-300 text-xs mt-3">Xankəndi, Qarabağ, Azərbaycan</p>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">Sürətli Keçidlər</h5>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li><a href="#about" class="hover:text-gold transition">Haqqımızda</a></li>
+                        <li><a href="#programs" class="hover:text-gold transition">Proqramlar</a></li>
+                        <li><a href="#research" class="hover:text-gold transition">Elmi-Tədqiqat</a></li>
+                        <li><a href="#clinic" class="hover:text-gold transition">Klinika</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">Tələbələr Üçün</h5>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li><a href="#" class="hover:text-gold transition">Tələbə Portalı</a></li>
+                        <li><a href="#" class="hover:text-gold transition">Elektron Kitabxana</a></li>
+                        <li><a href="#" class="hover:text-gold transition">Akademik Təqvim</a></li>
+                        <li><a href="#" class="hover:text-gold transition">Karyera Mərkəzi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">Əlaqə</h5>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li>info@kuc.edu.az</li>
+                        <li>admissions@kuc.edu.az</li>
+                        <li>research@kuc.edu.az</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-blue-300">
+                <p>&copy; 2026 Qarabağ Universiteti - Tibb və Sağlamlıq Elmləri Fakültəsi. Bütün hüquqlar qorunur.</p>
+                <div class="flex gap-4 mt-3 sm:mt-0">
+                    <a href="#" class="hover:text-gold transition">Məxfilik Siyasəti</a>
+                    <a href="#" class="hover:text-gold transition">İstifadə Şərtləri</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
